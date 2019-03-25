@@ -1,0 +1,12 @@
+from django.test import TestCase
+
+#wrong comment syntax
+class ExampleTestCase(TestCase):
+    def test_one(self):
+        self.assertEqual(1, 1)
+
+    def test_not_equal(self):
+        self.assertNotEqual(2, 1)
+
+    def test_true(self):
+        self.assertTrue('a' in 'Hello')
